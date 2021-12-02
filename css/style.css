@@ -13,12 +13,21 @@ Primary #e67e22
 Tints: #fdf2e9
 Grey: 
 color: #6f6f6f;
+
+--- Shadows
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
  */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 html {
@@ -145,11 +154,10 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #e67e22;
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
@@ -157,6 +165,9 @@ body {
   border-radius: 9px;
   text-decoration: none;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -181,6 +192,18 @@ body {
   background-color: #fdf2e9;
   /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .hero-img {
@@ -631,4 +654,83 @@ strong {
   font-size: 1.8rem;
   line-height: 1.8;
 }
-/*END Feature part */ ;
+/*END Feature part */
+
+/* CTA section */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4em;
+  color: #45260a;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 152, 78, 0.35),
+      rgba(230, 126, 34, 0.35)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  color: inherit;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* END CTA section */ ;
