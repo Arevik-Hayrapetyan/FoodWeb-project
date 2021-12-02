@@ -1,4 +1,3 @@
 # Omnifood-project
-# Omnifood-project
-# Omnifood
-# Omnifood-project
+
+## Project is consist of: HTML CSS JS
