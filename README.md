@@ -1,3 +1,1 @@
-# Omnifood-project
-
-## Project is consist of: HTML CSS JS
+## Stack: HTML CSS JS
